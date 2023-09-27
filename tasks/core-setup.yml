@@ -8,11 +8,11 @@
     - neovim
     - core
 
-- name: Install System Packages 2 (i3, tmux, flameshot, stow, fzf, tldr)
+- name: Install System Packages 2 (i3, tmux, flameshot, stow, fzf, tldr, ripgrep)
 
   become: true
   apt:
-    name: ["i3", "tmux", "flameshot", "stow", "fzf", "tldr", "xclip"]
+    name: ["i3", "tmux", "flameshot", "stow", "fzf", "tldr", "xclip", "ripgrep"]
   tags:
     - install
     - core
