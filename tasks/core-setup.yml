@@ -12,7 +12,7 @@
 
   become: true
   apt:
-    name: ["i3", "tmux", "flameshot", "stow", "fzf", "tldr"]
+    name: ["i3", "tmux", "flameshot", "stow", "fzf", "tldr", "xclip"]
   tags:
     - install
     - core
