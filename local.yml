@@ -17,4 +17,4 @@
       - import_tasks: tasks/nvim-setup.yml
 #      - import_tasks: tasks/git-setup.yml
 #      - import_tasks: tasks/signal-setup.yml
-#      - import_tasks: tasks/node-setup.yml
+      - import_tasks: tasks/node-setup.yml

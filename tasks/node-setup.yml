@@ -42,7 +42,7 @@
 
 - name: Install correct version of Node
   become: true
-  shell: n 18
+  shell: n lts
   tags:
     - install
     - node
