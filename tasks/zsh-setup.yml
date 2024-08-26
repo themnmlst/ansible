@@ -22,14 +22,6 @@
   tags:
     - zsh
 
-- name: Install zsh-completions plugin
-  ansible.builtin.git:
-    repo: https://github.com/zsh-users/zsh-completions
-    dest: ~/.oh-my-zsh/custom/plugins/zsh-completions
-    depth: 1
-  tags:
-    - zsh
-
 - name: Install zsh-syntax-highlighting plugin
   ansible.builtin.git:
     repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
@@ -38,7 +30,7 @@
   tags:
     - zsh
 
-- name: Change user shell to zsh 
+- name: Change user shell to zsh
   become: true
   ansible.builtin.user:
     name: "{{ ansible_user_id }}"
@@ -60,3 +52,13 @@
     - zsh
   when: oh_my_stats.stat.exists == False
   become_user: theminimalist
+
+
+- name: powerlevel10k
+  ansible.builtin.git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: ~/.oh-my-zsh/custom/themes/powerlevel10k
+    depth: 1
+  tags:
+    - zsh
+

@@ -9,6 +9,6 @@
   git_config:
     name: user.name
     scope: global
-    value: "themnmlst"
+    value:"TheMinimalist"
   tags:
   - git-personal
